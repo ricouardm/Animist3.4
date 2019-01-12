@@ -1,0 +1,976 @@
+// Team Animist  3.4 Galladoria
+
+// Script Version :  00.29 Date 12.01.2019 16:17
+
+// S
+
+// IP ADD of DAOC SRV : 107.23.173.143
+
+// AVERAGE PING = 247 ms, MAX PING = 260 ms ==> wait = 300 ms
+
+// Team Members
+
+// DRIVER: Boiabandee --> Animist Verdant --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
+// HEALER1: Mimipousse --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
+// HEALER2: Bamilekee --> Druid --> Nurture 42, 33 Regen 33 --> Window name: HEALER2 
+// BLOCKBOT: Bamoun --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
+// DPS1: Ewondo --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS1
+// DPS2: Manguissa --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS2
+// DPS3: Douala --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS3
+// DPS4: Mboum --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
+
+
+Hotkey ( F1 ) // Mushroom
+{
+   
+Package
+
+  {
+  Sendto ( DRIVER  DPS1 DPS2 DPS3 DPS4)
+
+  Key (K)  // Set ground target at 000
+  Wait (300)
+  Key (4)  // Planting Medium DPS Mushroom
+  Wait (3800)
+  Key (4)  // Planting Medium DPS Mushroom
+  Wait (3800)
+  Key (M)  // Planting Heal Mushroom
+  Wait (3800)
+  Key (4)  // Planting Medium DPS Mushroom
+  Wait (3800)
+  Key (4)  // Planting Medium DPS Mushroom
+  Wait (3800) 
+  Key (4)  // Planting Medium DPS Mushroom
+  Wait (3800)
+  Key (4)  // Planting Medium DPS Mushroom
+  Wait (3800) 
+  Key (4)  // Planting Medium DPS Mushroom
+  Wait (3800) 
+  }
+
+}
+
+Hotkey ( F2 ) // AOE Spell
+{
+   
+Package
+
+ {
+  Sendto ( DRIVER DPS1 DPS2 DPS3 DPS4)
+
+  Key (2)  // Casting AOE spell
+  Wait (3300)
+  //Key (2)  // Casting AOE spell
+  //Wait (3300)
+  }
+
+Package
+
+  {
+  Sendto (HEALER1 HEALER2 BLOCKBOT )
+
+  Wait (3500) // adding a delay to make sure that healers don't get the aggro before the DPS's
+  Key (3) // All Healers Cast standard  group heal
+  }
+
+ }
+
+Hotkey (F3) // All DPS single DPS
+
+{
+ 
+Package
+
+  {
+  Sendto (DRIVER)
+  
+  Wait (300)
+  Slash ( "/face" )
+  Wait (300)
+  Key (1) // Send pet
+  Wait (300) 
+  Key (0) // Cast Debbuf Constitution
+  Wait (300)
+  Key (8) //all DPS cast wisp
+  Wait (3100)
+  Key (8) //all DPS cast wisp
+  Wait (3100)
+ //Key (8) //all DPS cast wisp
+ //Wait (3100)
+ //Key (8) //all DPS cast wisp
+ //Wait (3100)
+  }
+
+Package
+
+  {
+  
+  Sendto (DPS1 DPS2 DPS3 DPS4)
+  
+  Slash ( "/assist DRIVER" )
+  Wait (300)
+  Slash ( "/face" )
+  Wait (300)
+  Key (1) // Send pet
+  Wait (300) 
+  Key (0) // Cast Debbuf Constitution
+  Wait (300)
+  Key (8) // Cast wisp
+  Wait (3100)
+  Key (8) // Cast wisp
+  Wait (3100)
+ //Key (8) // Cast wisp
+ //Wait (3100)
+ //Key (8) // Cast wisp
+ //Wait (3100)
+  }
+
+}
+
+Hotkey (F4) // All Healers Cast standard  group heal
+
+{
+ 
+Package
+
+  {
+  Sendto (HEALER1 HEALER2 BLOCKBOT)
+  
+  Key (3) // All healers cast standard group heal
+  Wait (2300)
+  }
+
+}
+
+Hotkey (F5) // All Healers Cast specialized  group heal
+
+{
+ 
+Package
+
+  {
+  Sendto (HEALER1 HEALER2 BLOCKBOT)
+
+  Key (6) //Large specialized group heal
+  Wait (3300)
+  }
+
+}
+
+Hotkey (F6) // All Healers Cast specialized heal on Driver Target
+
+{
+ 
+Package
+
+  {
+  Sendto (HEALER1 HEALER2 BLOCKBOT)
+
+  Slash ( "/assist DRIVER" )
+  Wait ( 300 )
+  Key (5) //Large specialized single target heal
+  Wait (3300)
+  }
+
+}
+
+Hotkey (F7) // SOS DPS Quick Cast and AOE DPS on all Animists
+
+{
+ 
+Package
+
+  {
+  Sendto (DRIVER DPS1 DPS2 DPS3 DPS4)
+
+  Key (H) // QuickCast
+  Wait (300)
+  Key (2) // AOE
+  Wait (3300)
+  }
+
+}
+
+
+Hotkey ( F8 ) // BUFF KEY
+
+{
+ 
+Package
+   
+  {
+  Sendto ( HEALER1 )
+
+  // Buff hEALER 1
+
+  Slash ( "/target HEALER1" )
+  Wait ( 300 )
+  Key ( U ) // DEX
+  Wait ( 3300 )
+  Key ( I ) // CON
+  Wait ( 3300 )
+  Key ( O ) // AF
+  Wait ( 3300 )
+	Key ( P ) // AF BARD
+  Wait ( 3300 )
+	Key ( J ) // CON STR Bard
+  Wait ( 3300 )
+  Key ( 8 ) // Cast Mana Regen song
+  Wait ( 3300 )
+  Key ( 9 ) // Cast heal Song
+  Wait ( 2300 )
+  Key ( 7 ) // Cast End song
+  Wait ( 3300 )
+	//Key ( 0 ) // Cast speed song removed to be able to cast it when desired
+  //Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+// Buff Driver
+
+	Slash ( "/target DRIVER" )
+  Wait ( 300 )
+  Key ( U ) // DEX
+  Wait ( 3300 )
+  Key ( I ) // CON
+  Wait ( 3300 )
+  Key ( P ) // Cast AF BARD
+  Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  // Buff Healer 2
+
+  Slash ( "/target HEALER2" )
+  Wait ( 300 )
+  Key ( U ) // DEX
+  Wait ( 3300 )
+  Key ( I ) // CON
+  Wait ( 3300 )
+	Key ( O ) // AF
+  Wait ( 3300 )
+	Key ( P ) // Cast AF BARD
+  Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+	// Buff DPS 1
+
+  Slash ( "/target DPS1" )
+  Wait ( 300 )
+  Key ( U ) // DEX
+  Wait ( 3300 )
+  Key ( I ) // CON
+  Wait ( 3300 )
+	Key ( P ) // Cast AF BARD
+  Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  // Buff DPS 2
+
+  Slash ( "/target DPS2" )
+  Wait ( 300 )
+  Key ( P ) // Cast AF BARD
+  Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  // Buff DPS 3
+
+  Slash ( "/target DPS3" )
+  Wait ( 300 )
+  Key ( P ) // Cast AF BARD
+  Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  // Buff DPS 4
+
+  Slash ( "/target DPS4" )
+  Wait ( 300 )
+  Key ( P ) // Cast AF BARD
+  Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  // Buff BLOCKBOT
+
+  Slash ( "/target BLOCKBOT" )
+  Wait ( 300 )
+  Key ( P ) // Cast AF BARD
+  Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+  }
+  
+Package
+
+  {
+  Sendto ( HEALER2 )
+
+  // Buff Healer 2
+
+  Slash ( "/target HEALER2" )
+  Wait ( 300 )
+  Key ( U ) // DEX/QUI
+  Wait ( 3300 )
+
+  // Buff Healer 1
+        
+	Slash ( "/target HEALER1" )
+  Wait ( 300 )
+  Key ( U ) // DEX/QUI
+  Wait ( 3300 )
+
+  // Buff BlockBot
+
+  Slash ( "/target BLOCKBOT" )
+  Wait ( 300 )
+  Key ( U ) // DEX/QUI
+  Wait ( 3300 )
+  Key ( O ) // CON/STR
+  Wait ( 3300 )
+
+  // Buff Driver
+
+  Slash ( "/target DRIVER" )
+  Wait ( 300 )
+  Key ( U ) // DEX/QUI
+  Wait ( 3300 )
+  Key ( I ) // INT
+  Wait ( 3300 )
+  Key ( O ) // CON/STR
+  Wait ( 3300 )
+ 
+  // Buff DPS 1
+
+	Slash ( "/target DPS1" )
+  Wait ( 300 )
+  Key ( U ) // DEX/QUI
+  Wait ( 3300 )
+  Key ( I ) // INT
+  Wait ( 3300 )
+  Key ( O ) // CON/STR
+  Wait ( 3300 )
+
+  // Buff DPS 2
+
+	Slash ( "/target DPS2" )
+  Wait ( 300 )
+  Key ( U ) // DEX/QUI
+  Wait ( 3300 )
+  Key ( I ) // INT
+  Wait ( 3300 )
+
+  // Buff DPS 3
+
+  Slash ( "/target DPS3" )
+  Wait ( 300 )
+  Key ( U ) // DEX/QUI
+  Wait ( 3300 )
+  Key ( I ) // INT
+  Wait ( 3300 )
+
+  // Buff DPS 4
+
+	Slash ( "/target DPS4" )
+  Wait ( 300 )
+  Key ( U ) // DEX/QUI
+  Wait ( 3300 )
+  Key ( I ) // INT
+  Wait ( 3300 )
+
+	// Buff group with druid resitance
+
+  Key ( L ) // DRUID RES
+  Wait ( 3300 )
+ 
+ }
+
+Package
+   
+  {
+  Sendto ( BLOCKBOT )
+
+  // Buff Blockbot
+
+  Slash ( "/target BLOCKBOT" )
+  Wait ( 300 )
+  Key ( U ) // DEX
+  Wait ( 3300 )
+  Key ( I ) // CON
+  Wait ( 3300 )
+  Key ( O ) // AF
+  Wait ( 3300 )
+	Key ( H ) // STR
+  Wait ( 3300 )
+  //Key (E) // Bubble
+  //Wait (300)
+	
+  // Buff DPS 2
+
+  Slash ( "/target DPS2" )
+  Wait ( 300 )
+  Key ( U ) // DEX
+  Wait ( 3300 )
+  Key ( I ) // CON
+  Wait ( 3300 )
+	Key ( H ) // STR
+  Wait ( 3300 )
+
+  // Buff DPS 3
+
+  Slash ( "/target DPS3" )
+  Wait ( 300 )
+  Key ( U ) // DEX
+  Wait ( 3300 )
+  Key ( I ) // CON
+  Wait ( 3300 )
+	Key ( H ) // STR
+  Wait ( 3300 )
+
+  // Buff DPS 4
+
+	Slash ( "/target DPS4" )
+  Wait ( 300 )
+  Key ( U ) // DEX
+  Wait ( 3300 )
+  Key ( I ) // CON
+  Wait ( 3300 )
+	Key ( H ) // STR
+  Wait ( 3300 )
+  
+  // Buff Driver
+
+	Slash ( "/target DRIVER" )
+  Wait ( 300 )
+  Key ( 8 ) // guard
+  Slash ( "/target HEALER2" ) // target Druid
+  //Wait ( 300 )
+  //Key ( 9 ) // protect
+
+  // Buff group with Warden RS
+
+	Key (L) // WARDEN RES
+  Wait ( 3300 )
+  }
+
+Package
+
+  {
+  Sendto ( DRIVER )
+
+  // Driver self buff
+
+  Slash ( "/target DRIVER" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I ) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (3300)
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+Package
+
+  {
+  Sendto ( DPS1)
+
+  // DPS 1 self buff
+
+  Slash ( "/target DPS1" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I ) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+Package
+
+  {
+  Sendto ( DPS2)
+
+  // DPS 2 self buff
+
+  Slash ( "/target DPS2" )
+  Wait ( 300 )
+  Key ( U) // AF
+  Wait ( 3300 )
+  Key ( I ) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+Package
+
+  {
+  Sendto ( DPS3)
+
+  // DPS 3 self buff
+    
+  Slash ( "/target DPS3" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I ) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)
+  Key (7) // Bubble
+  Wait (4300)  
+ 	}
+
+Package
+
+  {
+  Sendto ( DPS4)
+
+  // DPS 4 self buff
+
+  Slash ( "/target DPS4" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I ) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+}
+
+Hotkey ( F9 ) // Stick Macro - sending stick to all toons except driver
+
+{
+  Sendto ( DPS1 DPS2 DPS3 DPS4 HEALER1 HEALER2 BLOCKBOT )
+
+  Slash ( "/target DRIVER" )
+  Wait ( 300 )
+  Key ( T )  // assuming T binded to /stick
+} 
+
+Hotkey ( F10 ) // Breack stick - sending stick to all toons except driver
+
+{
+  Sendto ( DPS1 DPS2 DPS3 DPS4 HEALER1 HEALER2 )
+
+   Key ( S ) // going back to break the stick 
+}
+
+Hotkey ( F11 ) // Face
+
+{
+   
+Package
+
+  {
+  Sendto ( DRIVER )
+
+  Key (K)  // set Groundset to 000
+  Wait (300)
+  }
+
+ Package
+
+  {
+  Sendto ( DPS1 DPS2 DPS3 DPS4)
+
+  Slash ( "/target DRIVER" )
+  Wait (300)
+  Key (F)  // assuming F binded to /face
+  Wait (300)
+  Key (K)  // set Groundset to 000
+  Wait (300)
+  }
+
+Package
+
+  {
+  Sendto ( HEALER1 HEALER2)
+
+  Slash ( "/target DRIVER" )
+  Wait (300)
+  Key (F)  // assuming F binded to /face
+  }
+
+ }
+
+Hotkey ( F12 ) // PORTEAM
+
+{
+  PortTeam ( 3000 ) // wait  3 sec before TP next toon
+}
+
+Hotkey (Minus) // RE BUFF
+
+{
+ 
+Package
+
+  {
+  Sendto ( DRIVER )
+
+  // DRIVER self buff
+
+  Slash ( "/target DRIVER" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I ) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+Package
+
+  {
+  Sendto ( DPS1)
+
+  // DPS 1 self buff
+
+  Slash ( "/target DPS1" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+Package
+
+  {
+  Sendto ( DPS2)
+
+  // DPS 2 self buff
+
+  Slash ( "/target DPS2" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+Package
+
+  {
+  Sendto ( DPS3)
+
+  // DPS 3 self buff
+
+  Slash ( "/target DPS3" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I ) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)  
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+Package
+
+  {
+  Sendto ( DPS4)
+
+  // DPS 4 self buff
+
+  Slash ( "/target DPS4" )
+  Wait ( 300 )
+  Key ( U ) // AF
+  Wait ( 3300 )
+  Key ( I) // ABSORBE
+  Wait (3300)
+  Key (O) // ADD DMG
+  Wait (4300)
+  Key (7) // Bubble
+  Wait (4300)
+ 	}
+
+Package
+
+  {
+  Sendto ( HEALER2)
+
+  // Group druid res 
+
+  Key ( L ) // DRUID  RES
+  Wait ( 3300 )
+ 	}
+
+Package
+
+  {
+  Sendto ( BLOCKBOT)
+
+  // Group Warden res
+
+  Key (L) // WARDEN  RES
+  Wait ( 3300 )
+ 	}
+
+Package
+   
+  {
+  Sendto ( HEALER1 )
+
+  Slash ( "/target HEALER1" )
+  Wait ( 300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  Slash ( "/target HEALER2" )
+  Wait ( 300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )   
+
+  Slash ( "/target BLOCKBOT" )
+  Wait ( 300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+    
+  Slash ( "/target DPS1" )
+  Wait ( 300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  Slash ( "/target DPS2" )
+  Wait ( 300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  Slash ( "/target DPS3" )
+  Wait ( 300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )   
+
+  Slash ( "/target DPS4" )
+  Wait ( 300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+    
+  Slash ( "/target DRIVER" )
+  Wait ( 300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
+
+  Key ( J ) // Cast Bard CONSTIT &  STRENGH
+  Wait ( 3300 )
+  }
+
+}
+
+Hotkey (Plus) // SOS HEAL +
+ 
+  {
+  Sendto ( HEALER2 )
+
+  Slash ( "/assist DRIVER" )
+  Wait (300)
+  Key (7) // STANDALONE IH
+  Wait (300)
+  Key (8) // IH GRP
+  }
+
+
+Hotkey (Oem7) // Kill Turrets ''
+
+{
+
+Package
+
+  {
+  Sendto (DRIVER)
+  Key (J) // Kill All Turrets
+  Wait (300)
+  }
+
+Package
+
+   {
+  Sendto (DPS1)
+  Key (J) // Kill All Turrets
+  Wait (300)
+  }
+
+Package
+
+  {
+  Sendto (DPS2)
+  Key (J) // Kill All Turrets
+  Wait (300)
+  }
+
+Package
+
+  {
+  Sendto (DPS3)
+  Key (J) // Kill All Turrets
+  Wait (300)
+  }
+
+Package
+
+  {
+  Sendto (DPS4)
+  Key (J) // Kill All Turrets
+  Wait (300)
+  }
+
+}
+
+Hotkey (Oem4) // Cast the animist Tank PET [
+
+{
+
+Package
+{
+  sendto (BLOCKBOT)
+  Key (E) //  cast the warden Bubble
+  Wait (300)
+}
+
+Package
+
+  {
+  Sendto (DRIVER)
+  
+  Key (P) // Cast the animist Tank PET
+  Wait (5300)
+  Key (7) // PET in passive
+  Wait (300)
+  }
+
+Package
+
+  {
+  Sendto (DPS1)
+  
+  Wait (250)
+  Key (P) // Cast the animist Tank PET
+  Wait (5300)
+  Key (7) // PET in passive
+  Wait (300)
+  }
+
+Package
+
+  {
+  Sendto (DPS2)
+  
+  Wait (500)
+  Key (P) // Cast the animist Tank PET
+  Wait (5300)
+  Key (7) // PET in passive
+  Wait (300)
+  }
+
+Package
+
+  {
+  Sendto (DPS3)
+  
+  Wait (750)
+  Key (P) // Cast the animist Tank PET
+  Wait (5300)
+  Key (7) // PET in passive
+  Wait (300)
+  }
+
+Package
+
+  {
+  Sendto (DPS4)
+  
+  Wait (1000)
+  Key (P) // Cast the animist Tank PET
+  Wait (5300)
+  Key (7) // PET in passive
+  Wait (300)
+  }
+
+}
+
+Hotkey ( Oem6 ) // BUFF KEY
+
+{
+ 
+Package
+   
+{
+  Sendto ( HEALER2 )
+
+  Key ( H ) // INT
+  Wait ( 4300 )
+  Key ( J ) // STR & CON
+  Wait ( 4300 )
+  Key ( K ) // DEX & QUICK
+  Wait ( 4300 )
+  }
+}
+
+Hotkey ( Oem1 ) // Cast Bard Speed
+
+{
+ 
+Package
+   
+  {
+  Sendto ( HEALER1 )
+
+  Key ( 0 ) // Cast speed song
+  Wait ( 3300 )
+  }
+
+}
+
+Hotkey (Oem3)
+{
+   package
+   {
+    Sendto ( DRIVER )
+    
+    Slash ( "/invite DPS1" )
+	Slash ( "/invite DPS2" )
+	Slash ( "/invite DPS3" )
+	Slash ( "/invite DPS4" )
+ 	Slash ( "/invite HEALER1" )
+	Slash ( "/invite HEALER2" )
+	Slash ( "/invite BLOCKBOT" )
+   }
+   
+   package
+   {
+    Sendto ( DPS1 DPS2 DPS3 DPS4 HEALER1 HEALER2 BLOCKBOT )
+
+    Wait(1000)
+    ClickMouse (625 430) // location of the Accept Invite button     
+   }
+}

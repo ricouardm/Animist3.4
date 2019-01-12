@@ -1,0 +1,50 @@
+[
+  [
+    {
+      "y": 0.25,
+      "x": 1
+    },
+    "1\nP ATT.",
+    "2\nAOE",
+    "3\nB SH",
+    "4\nM SH",
+    "5\nS SH",
+    "6\nA SH",
+    "7\nWISP",
+    "8\nWISP",
+    "9\nDRAIN",
+    "0\nDEBU"
+  ],
+  [
+    {
+      "y": 0.25,
+      "x": 1
+    },
+    "ALT 1\nAF",
+    "ALT 2\nABS",
+    "ALT 3\nADD",
+    "ALT 4\nPET",
+    "ALT 5\nQ CA",
+    "ALT 6\nR PET",
+    "ALT 7\nGT 00",
+    "ALT 8\nML 9",
+    "ALT 9\n9",
+    "ALT 0\nH SH"
+  ],
+  [
+    {
+      "y": 0.25,
+      "x": 1
+    },
+    "CTR 1\nNA",
+    "CTR 2\nNA",
+    "CTR 3\nNA",
+    "CTR 4\nNA",
+    "CTR 5\nNA",
+    "CTR 6\nNA",
+    "CTR 7\nNA",
+    "CTR 8\nNA",
+    "CTR 9\nNA",
+    "CTR 0\nNA"
+  ]
+]
