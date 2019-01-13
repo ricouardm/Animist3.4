@@ -1,8 +1,6 @@
 // Team Animist  3.4 Galladoria
 
-// Script Version :  00.29 Date 12.01.2019 16:17
-
-// S
+// Script Version :  00.03 Date 13.01.2019 17:47
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -10,14 +8,14 @@
 
 // Team Members
 
-// DRIVER: Boiabandee --> Animist Verdant --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
-// HEALER1: Mimipousse --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
-// HEALER2: Bamilekee --> Druid --> Nurture 42, 33 Regen 33 --> Window name: HEALER2 
-// BLOCKBOT: Bamoun --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
-// DPS1: Ewondo --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS1
-// DPS2: Manguissa --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS2
-// DPS3: Douala --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS3
-// DPS4: Mboum --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
+// DRIVER: Bafia --> Animist Verdant --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
+// HEALER1: Bamenyam --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
+// HEALER2: Bandjoum --> Druid --> Nurture 42, 33 Regen 33 --> Window name: HEALER2 
+// BLOCKBOT: Bamun --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
+// DPS1: Bajwe --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS1
+// DPS2: Balbamu --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS2
+// DPS3: Balefali --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS3
+// DPS4: Bamendjing --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
 
 
 Hotkey ( F1 ) // Mushroom
@@ -34,17 +32,17 @@ Package
   Wait (3800)
   Key (4)  // Planting Medium DPS Mushroom
   Wait (3800)
-  Key (M)  // Planting Heal Mushroom
-  Wait (3800)
+  //Key (M)  // Planting Heal Mushroom
+  //Wait (3800)
   Key (4)  // Planting Medium DPS Mushroom
   Wait (3800)
-  Key (4)  // Planting Medium DPS Mushroom
-  Wait (3800) 
-  Key (4)  // Planting Medium DPS Mushroom
-  Wait (3800)
-  Key (4)  // Planting Medium DPS Mushroom
-  Wait (3800) 
-  Key (4)  // Planting Medium DPS Mushroom
+  //Key (4)  // Planting Medium DPS Mushroom
+  //Wait (3800) 
+  //Key (4)  // Planting Medium DPS Mushroom
+  //Wait (3800)
+  //Key (4)  // Planting Medium DPS Mushroom
+  //Wait (3800) 
+  //Key (4)  // Planting Medium DPS Mushroom
   Wait (3800) 
   }
 
@@ -89,16 +87,16 @@ Package
   Wait (300)
   Key (1) // Send pet
   Wait (300) 
-  Key (0) // Cast Debbuf Constitution
-  Wait (300)
-  Key (8) //all DPS cast wisp
+  //Key (0) // Cast Debbuf Constitution
+  //Wait (300)
+  Key (8) //Cast wisp
+  Wait (2800)
+  Key (9) //Cast Drainlife
   Wait (3100)
-  Key (8) //all DPS cast wisp
-  Wait (3100)
- //Key (8) //all DPS cast wisp
- //Wait (3100)
- //Key (8) //all DPS cast wisp
- //Wait (3100)
+ Key (9) //Cast Drainlife
+ Wait (2800)
+ Key (9) //Cast Drainlife
+ Wait (2800)
   }
 
 Package
@@ -111,18 +109,18 @@ Package
   Wait (300)
   Slash ( "/face" )
   Wait (300)
-  Key (1) // Send pet
-  Wait (300) 
-  Key (0) // Cast Debbuf Constitution
-  Wait (300)
+  //Key (1) // Send pet
+  //Wait (300) 
+  //Key (0) // Cast Debbuf Constitution
+  //Wait (300)
   Key (8) // Cast wisp
+  Wait (2800)
+  Key (9) // Cast Drainlife
   Wait (3100)
-  Key (8) // Cast wisp
-  Wait (3100)
- //Key (8) // Cast wisp
- //Wait (3100)
- //Key (8) // Cast wisp
- //Wait (3100)
+ Key (9) // Cast Drainlife
+ Wait (2800)
+ Key (9) // Cast Drainlife
+ Wait (2800)
   }
 
 }
