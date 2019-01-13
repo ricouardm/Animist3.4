@@ -1,6 +1,6 @@
 // Team Animist  3.4 Galladoria
 
-// Script Version :  00.03 Date 13.01.2019 17:47
+// Script Version :  00.04 Date 13.01.2019 22:52
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -18,7 +18,7 @@
 // DPS4: Bamendjing --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
 
 
-Hotkey ( F1 ) // Mushroom
+Hotkey ( F1 ) // Mushroom, this key is for the Animist's to plant mushrooms
 {
    
 Package
@@ -48,7 +48,7 @@ Package
 
 }
 
-Hotkey ( F2 ) // AOE Spell
+Hotkey ( F2 ) // AOE Spell, this key is for Animist'as to AOE and gfor Healer's to Group Heal
 {
    
 Package
@@ -73,7 +73,7 @@ Package
 
  }
 
-Hotkey (F3) // All DPS single DPS
+Hotkey (F3) // All DPS single DPS, all DPS's will assist the Driver
 
 {
  
@@ -199,7 +199,7 @@ Package
   {
   Sendto ( HEALER1 )
 
-  // Buff hEALER 1
+  // Buff HEALER1
 
   Slash ( "/target HEALER1" )
   Wait ( 300 )
@@ -224,7 +224,7 @@ Package
   Key ( K ) // Cast Bard Resistance
   Wait ( 4300 )
 
-// Buff Driver
+// Buff DRIVER
 
 	Slash ( "/target DRIVER" )
   Wait ( 300 )
@@ -237,7 +237,7 @@ Package
   Key ( K ) // Cast Bard Resistance
   Wait ( 4300 )
 
-  // Buff Healer 2
+  // Buff HEALER2
 
   Slash ( "/target HEALER2" )
   Wait ( 300 )
@@ -252,7 +252,7 @@ Package
   Key ( K ) // Cast Bard Resistance
   Wait ( 4300 )
 
-	// Buff DPS 1
+	// Buff DPS1
 
   Slash ( "/target DPS1" )
   Wait ( 300 )
@@ -265,7 +265,7 @@ Package
   Key ( K ) // Cast Bard Resistance
   Wait ( 4300 )
 
-  // Buff DPS 2
+  // Buff DPS2
 
   Slash ( "/target DPS2" )
   Wait ( 300 )
@@ -274,7 +274,7 @@ Package
   Key ( K ) // Cast Bard Resistance
   Wait ( 4300 )
 
-  // Buff DPS 3
+  // Buff DPS3
 
   Slash ( "/target DPS3" )
   Wait ( 300 )
@@ -283,7 +283,7 @@ Package
   Key ( K ) // Cast Bard Resistance
   Wait ( 4300 )
 
-  // Buff DPS 4
+  // Buff DPS4
 
   Slash ( "/target DPS4" )
   Wait ( 300 )
@@ -307,30 +307,30 @@ Package
   {
   Sendto ( HEALER2 )
 
-  // Buff Healer 2
+  // Buff HEALER2
 
   Slash ( "/target HEALER2" )
   Wait ( 300 )
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
 
-  // Buff Healer 1
+  // Buff HEALER1
         
-	Slash ( "/target HEALER1" )
+  Slash ( "/target HEALER1" )
   Wait ( 300 )
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
 
-  // Buff BlockBot
+  // Buff BLOCKBOT
 
   Slash ( "/target BLOCKBOT" )
   Wait ( 300 )
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
-  Key ( O ) // CON/STR
-  Wait ( 3300 )
+  //Key ( O ) // CON/STR
+  //Wait ( 3300 )
 
-  // Buff Driver
+  // Buff DRIVER
 
   Slash ( "/target DRIVER" )
   Wait ( 300 )
@@ -349,12 +349,12 @@ Package
   Wait ( 3300 )
   Key ( I ) // INT
   Wait ( 3300 )
-  Key ( O ) // CON/STR
-  Wait ( 3300 )
+  //Key ( O ) // CON/STR
+  //Wait ( 3300 )
 
   // Buff DPS 2
 
-	Slash ( "/target DPS2" )
+  Slash ( "/target DPS2" )
   Wait ( 300 )
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
@@ -391,7 +391,7 @@ Package
   {
   Sendto ( BLOCKBOT )
 
-  // Buff Blockbot
+  // Buff BLOCKBOT
 
   Slash ( "/target BLOCKBOT" )
   Wait ( 300 )
@@ -406,7 +406,7 @@ Package
   //Key (E) // Bubble
   //Wait (300)
 	
-  // Buff DPS 2
+  // Buff DPS2
 
   Slash ( "/target DPS2" )
   Wait ( 300 )
@@ -417,7 +417,7 @@ Package
 	Key ( H ) // STR
   Wait ( 3300 )
 
-  // Buff DPS 3
+  // Buff DPS3
 
   Slash ( "/target DPS3" )
   Wait ( 300 )
@@ -428,7 +428,7 @@ Package
 	Key ( H ) // STR
   Wait ( 3300 )
 
-  // Buff DPS 4
+  // Buff DPS4
 
 	Slash ( "/target DPS4" )
   Wait ( 300 )
@@ -439,7 +439,7 @@ Package
 	Key ( H ) // STR
   Wait ( 3300 )
   
-  // Buff Driver
+  // Buff DRIVER
 
 	Slash ( "/target DRIVER" )
   Wait ( 300 )
@@ -459,7 +459,7 @@ Package
   {
   Sendto ( DRIVER )
 
-  // Driver self buff
+  // DRIVER self buff
 
   Slash ( "/target DRIVER" )
   Wait ( 300 )
@@ -478,7 +478,7 @@ Package
   {
   Sendto ( DPS1)
 
-  // DPS 1 self buff
+  // DPS1 self buff
 
   Slash ( "/target DPS1" )
   Wait ( 300 )
@@ -497,7 +497,7 @@ Package
   {
   Sendto ( DPS2)
 
-  // DPS 2 self buff
+  // DPS2 self buff
 
   Slash ( "/target DPS2" )
   Wait ( 300 )
@@ -516,7 +516,7 @@ Package
   {
   Sendto ( DPS3)
 
-  // DPS 3 self buff
+  // DPS3 self buff
     
   Slash ( "/target DPS3" )
   Wait ( 300 )
@@ -535,7 +535,7 @@ Package
   {
   Sendto ( DPS4)
 
-  // DPS 4 self buff
+  // DPS4 self buff
 
   Slash ( "/target DPS4" )
   Wait ( 300 )
