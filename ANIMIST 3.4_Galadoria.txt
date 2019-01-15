@@ -1,6 +1,6 @@
 // Team Animist  3.4 Galladoria
 
-// Script Version :  00.04 Date 13.01.2019 22:52
+// Script Version :  00.06 Date 15.01.2019 12:35
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -48,7 +48,7 @@ Package
 
 }
 
-Hotkey ( F2 ) // AOE Spell, this key is for Animist'as to AOE and gfor Healer's to Group Heal
+Hotkey ( F2 ) // AOE Spell, this key is for Animist'as to AOE and the Healer's to  Standard Group Heal
 {
    
 Package
@@ -85,18 +85,18 @@ Package
   Wait (300)
   Slash ( "/face" )
   Wait (300)
-  Key (1) // Send pet
-  Wait (300) 
-  //Key (0) // Cast Debbuf Constitution
-  //Wait (300)
+  //Key (1) // Send pet
+  //Wait (300) 
+  Key (0) // Cast Debbuf Constitution
+  Wait (300)
   Key (8) //Cast wisp
   Wait (2800)
   Key (9) //Cast Drainlife
   Wait (3100)
  Key (9) //Cast Drainlife
  Wait (2800)
- Key (9) //Cast Drainlife
- Wait (2800)
+ //Key (9) //Cast Drainlife
+ //Wait (2800)
   }
 
 Package
@@ -119,8 +119,8 @@ Package
   Wait (3100)
  Key (9) // Cast Drainlife
  Wait (2800)
- Key (9) // Cast Drainlife
- Wait (2800)
+ //Key (9) // Cast Drainlife
+ //Wait (2800)
   }
 
 }
@@ -201,28 +201,28 @@ Package
 
   // Buff HEALER1
 
-  Slash ( "/target HEALER1" )
-  Wait ( 300 )
-  Key ( U ) // DEX
-  Wait ( 3300 )
-  Key ( I ) // CON
-  Wait ( 3300 )
-  Key ( O ) // AF
-  Wait ( 3300 )
+  	Slash ( "/target HEALER1" )
+  	Wait ( 300 )
+  	Key ( U ) // DEX
+  	Wait ( 3300 )
+  	Key ( I ) // CON
+  	Wait ( 3300 )
+  	Key ( O ) // AF
+  	Wait ( 3300 )
 	Key ( P ) // AF BARD
-  Wait ( 3300 )
+  	Wait ( 3300 )
 	Key ( J ) // CON STR Bard
-  Wait ( 3300 )
-  Key ( 8 ) // Cast Mana Regen song
-  Wait ( 3300 )
-  Key ( 9 ) // Cast heal Song
-  Wait ( 2300 )
-  Key ( 7 ) // Cast End song
-  Wait ( 3300 )
+	Wait ( 3300 )
+  	Key ( 8 ) // Cast Mana Regen song
+  	Wait ( 3300 )
+  	Key ( 9 ) // Cast heal Song
+  	Wait ( 2300 )
+  	Key ( 7 ) // Cast End song
+  	Wait ( 3300 )
 	//Key ( 0 ) // Cast speed song removed to be able to cast it when desired
-  //Wait ( 3300 )
-  Key ( K ) // Cast Bard Resistance
-  Wait ( 4300 )
+  	//Wait ( 3300 )
+  	Key ( K ) // Cast Bard Resistance
+  	Wait ( 4300 )
 
 // Buff DRIVER
 
@@ -488,8 +488,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+  //Wait (4300)
  	}
 
 Package
@@ -507,8 +507,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+  //Wait (4300)
  	}
 
 Package
@@ -526,8 +526,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)
-  Key (7) // Bubble
-  Wait (4300)  
+  //Key (7) // Bubble
+  //Wait (4300)  
  	}
 
 Package
@@ -545,8 +545,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+  //Wait (4300)
  	}
 
 }
@@ -632,8 +632,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+  //Wait (4300)
  	}
 
 Package
@@ -651,8 +651,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+  //Wait (4300)
  	}
 
 Package
@@ -670,8 +670,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+  //Wait (4300)
  	}
 
 Package
@@ -689,8 +689,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)  
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+ //Wait (4300)
  	}
 
 Package
@@ -708,8 +708,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (4300)
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+  //Wait (4300)
  	}
 
 Package
