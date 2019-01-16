@@ -1,6 +1,6 @@
 // Team Animist  3.4 Galladoria
 
-// Script Version :  00.06 Date 15.01.2019 12:35
+// Script Version :  00.08 Date 16.01.2019 16:42
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -844,14 +844,14 @@ Package
 
 }
 
-Hotkey (Oem4) // Cast the animist Tank PET [
+Hotkey (Oem4) // Cast the animist Tank PET
 
 {
 
 Package
 {
   sendto (BLOCKBOT)
-  Key (E) //  cast the warden Bubble
+  Key (E) //  Cast the warden Bubble
   Wait (300)
 }
 
@@ -860,60 +860,52 @@ Package
   {
   Sendto (DRIVER)
   
+  Wait(200)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
   Key (7) // PET in passive
   Wait (300)
   }
 
-Package
-
-  {
+ {
   Sendto (DPS1)
   
-  Wait (250)
+  Wait(400)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
   Key (7) // PET in passive
   Wait (300)
   }
 
-Package
-
-  {
+   {
   Sendto (DPS2)
   
-  Wait (500)
+  Wait(600)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
   Key (7) // PET in passive
   Wait (300)
   }
 
-Package
-
-  {
+   {
   Sendto (DPS3)
   
-  Wait (750)
+  Wait(800)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
   Key (7) // PET in passive
   Wait (300)
   }
 
-Package
-
-  {
+   {
   Sendto (DPS4)
   
-  Wait (1000)
+  Wait(1000)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
   Key (7) // PET in passive
   Wait (300)
   }
-
 }
 
 Hotkey ( Oem6 ) // BUFF KEY

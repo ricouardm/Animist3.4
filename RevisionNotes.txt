@@ -1,0 +1,35 @@
+Script name ANIMIST 3.4
+
+===== REV: 00.07 Date 15.01.2019 16:26 =====
+
+# Fine name :ANIMIST 3.0.txt
+
+Team description:
+  - Removed the dual entry for the Driver
+  - Correct some typo's
+
+F3 hotkey:
+- Animist will now only cast one wisp and after drain 
+- Update the timer of life drain to reflect the exact timer ( 3100 ms to 2800 ms)
+- Correct some typo's
+
+F8 hotkey:
+- Correct some typos
+- Removed the self bubble from DPS1-4 and DRIVER
+
+Minus hotkey:
+- Correct some typos
+- Removed the self bubble from DPS1-4 and DRIVER
+
+Oem4 hotkey:
+- Break down the PET sequence cast to be able to have PET bubbles not stacked (added a buffer of 200ms between casts)
+
+# File name: ANIMIST KEYBOARD.json
+- Removed Key 3 & 5 to free up space and barely used
+
+# File name: ANIMIST KEYBOARD.jpg
+- Removed Key 3 & 5 to free up space and barely used
+
+# Fine name :ANIMIST 3.0 REvision Notes.txt
+- File creation to track changes
+
