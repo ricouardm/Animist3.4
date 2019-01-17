@@ -44,9 +44,6 @@
 ####Oem7:
 - Simplify the  Kill All Turrets, the same command will be send to all DPS's and the Driver instead of 5 entries
 
-####Oem3:
-- Simplify the  Kill All Turrets, the same command will be send to all DPS's and the Driver instead of 5 entries
-
 
 ## ==REV: 00.08 Date 16.01.2019 16:42==
 
@@ -79,5 +76,5 @@
 ### File name: ANIMIST KEYBOARD.jpg
 - Removed Key 3 & 5 to free up space and barely used
 
-### Fine name :ANIMIST 3.4 REvision Notes.txt
+### Fine name :ANIMIST 3.4 Revision Notes.txt
 - File creation to track changes
