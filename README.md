@@ -75,6 +75,3 @@
 
 ### File name: ANIMIST KEYBOARD.jpg
 - Removed Key 3 & 5 to free up space and barely used
-
-### Fine name :ANIMIST 3.4 Revision Notes.txt
-- File creation to track changes
