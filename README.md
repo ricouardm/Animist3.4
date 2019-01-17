@@ -1,6 +1,6 @@
-# Animist3.4 
+# Animist3.4
 
-#Description : Mojoware, Daoc Animist Macro Team ( 5 Animist, 1 Warden, 1 Bard, 1 Druid)- Galladoria
+#Description : Mojoware, Daoc Animist Macro Team ( 5 Animist's, 1 Warden, 1 Bard, 1 Druid,)- Galladoria
 
 #Team Composition 
 
