@@ -1,6 +1,6 @@
 // Team Animist  3.4 Galladoria
 
-// Script Version :  00.08 Date 16.01.2019 16:42
+// Script Version :  00.09 Date 17.01.2019 11:36
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -28,21 +28,21 @@ Package
 
   Key (K)  // Set ground target at 000
   Wait (300)
-  Key (4)  // Planting Medium DPS Mushroom
+  Key (4)  // Planting DPS Mushroom
   Wait (3800)
-  Key (4)  // Planting Medium DPS Mushroom
+  Key (4)  // Planting DPS Mushroom
   Wait (3800)
   //Key (M)  // Planting Heal Mushroom
   //Wait (3800)
-  Key (4)  // Planting Medium DPS Mushroom
+  Key (4)  // Planting DPS Mushroom
   Wait (3800)
-  //Key (4)  // Planting Medium DPS Mushroom
+  //Key (4)  // Planting DPS Mushroom
   //Wait (3800) 
-  //Key (4)  // Planting Medium DPS Mushroom
+  //Key (4)  // Planting DPS Mushroom
   //Wait (3800)
-  //Key (4)  // Planting Medium DPS Mushroom
+  //Key (4)  // Planting DPS Mushroom
   //Wait (3800) 
-  //Key (4)  // Planting Medium DPS Mushroom
+  //Key (4)  // Planting DPS Mushroom
   Wait (3800) 
   }
 
@@ -67,7 +67,7 @@ Package
   {
   Sendto (HEALER1 HEALER2 BLOCKBOT )
 
-  Wait (3500) // adding a delay to make sure that healers don't get the aggro before the DPS's
+  Wait (3500) // Adding a delay to make sure that healers don't get the aggro before the DPS's
   Key (3) // All Healers Cast standard  group heal
   }
 
@@ -89,10 +89,10 @@ Package
   //Wait (300) 
   Key (0) // Cast Debbuf Constitution
   Wait (300)
-  Key (8) //Cast wisp
-  Wait (2800)
-  Key (9) //Cast Drainlife
+  Key (8) //Cast Wisp
   Wait (3100)
+  Key (9) //Cast Drainlife
+  Wait (2800)
  Key (9) //Cast Drainlife
  Wait (2800)
  //Key (9) //Cast Drainlife
@@ -111,12 +111,12 @@ Package
   Wait (300)
   //Key (1) // Send pet
   //Wait (300) 
-  //Key (0) // Cast Debbuf Constitution
-  //Wait (300)
-  Key (8) // Cast wisp
-  Wait (2800)
-  Key (9) // Cast Drainlife
+  Key (0) // Cast Debbuf Constitution
+  Wait (300)
+  Key (8) // Cast Wisp
   Wait (3100)
+  Key (9) // Cast Drainlife
+  Wait (2800)
  Key (9) // Cast Drainlife
  Wait (2800)
  //Key (9) // Cast Drainlife
@@ -140,7 +140,7 @@ Package
 
 }
 
-Hotkey (F5) // All Healers Cast specialized  group heal
+Hotkey (F5) // All Healers Cast specialized  GROUP heal
 
 {
  
@@ -469,8 +469,8 @@ Package
   Wait (3300)
   Key (O) // ADD DMG
   Wait (3300)
-  Key (7) // Bubble
-  Wait (4300)
+  //Key (7) // Bubble
+  //Wait (4300)
  	}
 
 Package
@@ -490,6 +490,10 @@ Package
   Wait (4300)
   //Key (7) // Bubble
   //Wait (4300)
+  Slash ( "/target BLOCKBOT" )
+  Wait ( 300 )
+  Key (O) // ADD DMG
+  Wait (4300)
  	}
 
 Package
@@ -509,6 +513,10 @@ Package
   Wait (4300)
   //Key (7) // Bubble
   //Wait (4300)
+  Slash ( "/target HEALER1" )
+  Wait ( 300 )
+  Key (O) // ADD DMG
+  Wait (4300)
  	}
 
 Package
@@ -528,6 +536,10 @@ Package
   Wait (4300)
   //Key (7) // Bubble
   //Wait (4300)  
+  Slash ( "/target HEALER2" )
+  Wait ( 300 )
+  Key (O) // ADD DMG
+  Wait (4300)
  	}
 
 Package
@@ -653,6 +665,10 @@ Package
   Wait (4300)
   //Key (7) // Bubble
   //Wait (4300)
+  Slash ( "/target BLOCKBOT" )
+  Wait ( 300 )
+  Key (O) // ADD DMG
+  Wait (4300)
  	}
 
 Package
@@ -672,6 +688,10 @@ Package
   Wait (4300)
   //Key (7) // Bubble
   //Wait (4300)
+  Slash ( "/target HEALER1" )
+  Wait ( 300 )
+  Key (O) // ADD DMG
+  Wait (4300)
  	}
 
 Package
@@ -691,6 +711,10 @@ Package
   Wait (4300)  
   //Key (7) // Bubble
  //Wait (4300)
+  Slash ( "/target HEALER2" )
+  Wait ( 300 )
+  Key (O) // ADD DMG
+  Wait (4300)
  	}
 
 Package
@@ -728,7 +752,7 @@ Package
   {
   Sendto ( BLOCKBOT)
 
-  // Group Warden res
+  // Group Warden resistance
 
   Key (L) // WARDEN  RES
   Wait ( 3300 )
@@ -805,43 +829,10 @@ Hotkey (Oem7) // Kill Turrets ''
 Package
 
   {
-  Sendto (DRIVER)
+  Sendto (DRIVER DPS1 DPS2 DPS3 DPS4)
   Key (J) // Kill All Turrets
   Wait (300)
   }
-
-Package
-
-   {
-  Sendto (DPS1)
-  Key (J) // Kill All Turrets
-  Wait (300)
-  }
-
-Package
-
-  {
-  Sendto (DPS2)
-  Key (J) // Kill All Turrets
-  Wait (300)
-  }
-
-Package
-
-  {
-  Sendto (DPS3)
-  Key (J) // Kill All Turrets
-  Wait (300)
-  }
-
-Package
-
-  {
-  Sendto (DPS4)
-  Key (J) // Kill All Turrets
-  Wait (300)
-  }
-
 }
 
 Hotkey (Oem4) // Cast the animist Tank PET
@@ -947,7 +938,7 @@ Hotkey (Oem3)
    {
     Sendto ( DRIVER )
     
-    Slash ( "/invite DPS1" )
+  Slash ( "/invite DPS1" )
 	Slash ( "/invite DPS2" )
 	Slash ( "/invite DPS3" )
 	Slash ( "/invite DPS4" )
@@ -961,6 +952,6 @@ Hotkey (Oem3)
     Sendto ( DPS1 DPS2 DPS3 DPS4 HEALER1 HEALER2 BLOCKBOT )
 
     Wait(1000)
-    ClickMouse (625 430) // location of the Accept Invite button     
+    ClickMouse (625 430) // Location of the Accept Invite button     
    }
 }
