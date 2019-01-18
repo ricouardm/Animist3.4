@@ -14,6 +14,15 @@
 - DPS4: Bamendjing --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
 
 
+## ==REV: 00.10 Date 18.01.2019 17:54==
+
+### Fine name: ANIMIST 3.4.txt
+
+####Oem4 hotkey:
+- BUG: Error while loading the file at line 861 : Missing Commande "Package" , added it and works properly
+
+
+
 ## ==REV: 00.09 Date 17.01.2019 11:36==
 
 ### Fine name: ANIMIST 3.4.txt

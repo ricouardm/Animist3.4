@@ -1,6 +1,6 @@
 // Team Animist  3.4 Galladoria
 
-// Script Version :  00.09 Date 17.01.2019 11:36
+// Script Version :  00.10 Date 18.01.2019 17:54
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -858,6 +858,8 @@ Package
   Wait (300)
   }
 
+Package
+
  {
   Sendto (DPS1)
   
@@ -867,6 +869,8 @@ Package
   Key (7) // PET in passive
   Wait (300)
   }
+
+Package
 
    {
   Sendto (DPS2)
@@ -878,6 +882,8 @@ Package
   Wait (300)
   }
 
+Package
+
    {
   Sendto (DPS3)
   
@@ -887,6 +893,8 @@ Package
   Key (7) // PET in passive
   Wait (300)
   }
+
+Package
 
    {
   Sendto (DPS4)
