@@ -1,8 +1,8 @@
 # Animist3.4
 
-#Description : Mojoware, Daoc Animist Macro Team ( 5 Animist's, 1 Warden, 1 Bard, 1 Druid,)- Galladoria
+#Description : Mojoware, Daoc Animist Macro Team ( 5 Animist's, 1 Warden, 1 Bard, 1 Druid)- Galladoria
 
-#Team Composition 
+#Team Composition:
 
 - DRIVER: Bafia --> Animist Verdant --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
 - HEALER1: Bamenyam --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
