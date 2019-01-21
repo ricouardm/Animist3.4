@@ -13,6 +13,18 @@
 - DPS3: Balefali --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS3
 - DPS4: Bamendjing --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
 
+## ==REV: 00.11 Date 21.01.2019 09:24==
+
+### Fine name: ANIMIST 3.4.txt
+
+####F8 hotkey:
+- Removed : Heal , Endurance, Mana songs from Healer1
+
+####F2 hotkey:
+- Removed : Heal er's will not start casting Goup heal 1.5 sec after DPS's cast AOE
+
+####Oem1 hotkey:
+-the Bard will now cast Endu, Mana and heal song on the top of the Speed. 
 
 ## ==REV: 00.10 Date 18.01.2019 17:54==
 

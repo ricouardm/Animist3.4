@@ -1,6 +1,6 @@
 // Team Animist  3.4 Galladoria
 
-// Script Version :  00.10 Date 18.01.2019 17:54
+// Script Version :  00.11 Date 21.01.2019 09:24
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -34,8 +34,8 @@ Package
   Wait (3800)
   //Key (M)  // Planting Heal Mushroom
   //Wait (3800)
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800)
+  //Key (4)  // Planting DPS Mushroom
+  //Wait (3800)
   //Key (4)  // Planting DPS Mushroom
   //Wait (3800) 
   //Key (4)  // Planting DPS Mushroom
@@ -67,7 +67,7 @@ Package
   {
   Sendto (HEALER1 HEALER2 BLOCKBOT )
 
-  Wait (3500) // Adding a delay to make sure that healers don't get the aggro before the DPS's
+  Wait (1500) // Adding a delay to make sure that healers don't get the aggro before the DPS's
   Key (3) // All Healers Cast standard  group heal
   }
 
@@ -207,22 +207,22 @@ Package
   	Wait ( 3300 )
   	Key ( I ) // CON
   	Wait ( 3300 )
-  	Key ( O ) // AF
-  	Wait ( 3300 )
-	Key ( P ) // AF BARD
+  Key ( O ) // AF
+  Wait ( 3300 )
+	 Key ( P ) // AF BARD
   	Wait ( 3300 )
 	Key ( J ) // CON STR Bard
 	Wait ( 3300 )
   	Key ( 8 ) // Cast Mana Regen song
   	Wait ( 3300 )
-  	Key ( 9 ) // Cast heal Song
-  	Wait ( 2300 )
-  	Key ( 7 ) // Cast End song
-  	Wait ( 3300 )
+  	//Key ( 9 ) // Cast heal Song
+  	//Wait ( 2300 )
+  	//Key ( 7 ) // Cast End song
+  	//Wait ( 3300 )
 	//Key ( 0 ) // Cast speed song removed to be able to cast it when desired
   	//Wait ( 3300 )
-  	Key ( K ) // Cast Bard Resistance
-  	Wait ( 4300 )
+  	//Key ( K ) // Cast Bard Resistance
+  	//Wait ( 4300 )
 
 // Buff DRIVER
 
@@ -934,8 +934,14 @@ Package
   {
   Sendto ( HEALER1 )
 
-  Key ( 0 ) // Cast speed song
+  Key ( 9 ) // Cast heal Song
+  Wait ( 2300 )
+  Key ( 7 ) // Cast End song
   Wait ( 3300 )
+  Key ( 0 ) // Cast speed song removed to be able to cast it when desired
+  Wait ( 3300 )
+  Key ( K ) // Cast Bard Resistance
+  Wait ( 4300 )
   }
 
 }
