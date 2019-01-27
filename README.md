@@ -23,8 +23,8 @@
 ####F2 hotkey:
 - Removed : Heal er's will not start casting Goup heal 1.5 sec after DPS's cast AOE
 
-####Oem1 hotkey:
--the Bard will now cast Endu, Mana and heal song on the top of the Speed. 
+#### RShift Oem1 hotkey NEW !!:
+-the Bard will now cast Endu, Mana and heal song 
 
 ## ==REV: 00.10 Date 18.01.2019 17:54==
 

@@ -969,3 +969,5 @@ Hotkey (Oem3)
     ClickMouse (625 430) // Location of the Accept Invite button     
    }
 }
+
+//LShift F1-F4, RShift F9-12, /groundset 000, V is speed, /groundassist 
