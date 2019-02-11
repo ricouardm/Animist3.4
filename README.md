@@ -6,16 +6,70 @@
 
 - DRIVER: Bafia --> Animist Verdant --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
 - HEALER1: Bamenyam --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
-- HEALER2: Bandjoum --> Druid --> Nurture 42, 33 Regen 33 --> Window name: HEALER2 
+- HEALER2: Bandjoum --> Druid --> Nurture 42, Regen 33 --> Window name: HEALER2 
 - BLOCKBOT: Bamun --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
 - DPS1: Bajwe --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS1
 - DPS2: Balbamu --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS2
 - DPS3: Balefali --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS3
 - DPS4: Bamendjing --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
 
+## ==REV: 00.12 Date 11.02.2019 11:07==
+
+### File name: ANIMIST 3.4.txt
+
+####Team Composition:
+- Fixed some typo's regarding Druid description (aka HEALER2)
+
+####F1:
+- Adding Heal Mushroom to the default planting sequence (  2 x DPS, 1 x Heal) of all Animist's ( Driver, DPS1-4)
+
+#### LShift F1:
+- Adding a new Mushroom plantation sequence for all Animist's ( Driver, DPS 1-4), they will all plant only one (1) Heal Mushroom
+
+#### LCtrl F1:
+- Adding a new Mushroom plantation sequence for DPS 3-4 , each of them will plant 8 DPS Mushroom's ( 16 x DPS mushroom's)
+
+#### F3
+- As the Animist reach Level 50, they now have access to pet that can move. Adding the fact that all Animists ( Driver and DPS 1-4) will sent their main PET to the target before they start DPS
+
+#### LShift F3:
+-  Adding a new function, all Animists's ( Driver and DPS 1-4) will send their PET at the target and cast a debuff on the target
+
+#### F8:
+- Removed Mana, Heal and Endurance song from the default cast sequence
+- Healer 2 (DROUD) will cast CON & FOR buff on all team members, As Bard have a self buff he will be excluded 
+- Bard to cast Resitance on himself (FIX)
+- BLOCKBOT bubble sequence remove  the Wait of 300 ms as not necessary (FIX)
+
+#### Oem1:
+- Bard cast Endurance, Mana and Heal songs 
+
+#### RShift Oem1:
+- Bard cast speed song
+
+#### Oem3:
+- This Macro  will invite all chars to the group and accept the invite
+- Adding a delay of 200 ms  beetween two invites
+
+#### LShift Oem3:
+- This Macro will send an Accept to an invite to a BG, Group. Toons that will accept the invite are : DPS1-4 , HEALER 1-2 & Blockbot
+
+#### RShift Oem3:
+- Adding all toons to a BG. To accept  you will need to use LShift Oem3
+
+#### V:
+- All toons of the GRoup will RUN
+
+
+
+
+
+
+
+
 ## ==REV: 00.11 Date 21.01.2019 09:24==
 
-### Fine name: ANIMIST 3.4.txt
+### File name: ANIMIST 3.4.txt
 
 ####F8 hotkey:
 - Removed : Heal , Endurance, Mana songs from Healer1
@@ -37,7 +91,7 @@
 
 ## ==REV: 00.09 Date 17.01.2019 11:36==
 
-### Fine name: ANIMIST 3.4.txt
+### File name: ANIMIST 3.4.txt
 
 ####F1 hotkey:
 - Correct some typo's to reflect recent changes ( removed different level's of shroom's)
@@ -68,7 +122,7 @@
 
 ## ==REV: 00.08 Date 16.01.2019 16:42==
 
-### Fine name: ANIMIST 3.4.txt
+### File name: ANIMIST 3.4.txt
 
 ####Team description:
   - Removed the dual entry for the Driver

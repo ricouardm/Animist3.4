@@ -1,6 +1,6 @@
 // Team Animist  3.4 Galladoria
 
-// Script Version :  00.11 Date 21.01.2019 09:24
+// Script Version :  00.12 Date 11.02.2019 11:07
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -10,7 +10,7 @@
 
 // DRIVER: Bafia --> Animist Verdant --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
 // HEALER1: Bamenyam --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
-// HEALER2: Bandjoum --> Druid --> Nurture 42, 33 Regen 33 --> Window name: HEALER2 
+// HEALER2: Bandjoum --> Druid --> Nurture 42, Regen 33 --> Window name: HEALER2 
 // BLOCKBOT: Bamun --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
 // DPS1: Bajwe --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS1
 // DPS2: Balbamu --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS2
@@ -32,8 +32,8 @@ Package
   Wait (3800)
   Key (4)  // Planting DPS Mushroom
   Wait (3800)
-  //Key (M)  // Planting Heal Mushroom
-  //Wait (3800)
+  Key (M)  // Planting Heal Mushroom
+  Wait (3800)
   //Key (4)  // Planting DPS Mushroom
   //Wait (3800)
   //Key (4)  // Planting DPS Mushroom
@@ -43,6 +43,52 @@ Package
   //Key (4)  // Planting DPS Mushroom
   //Wait (3800) 
   //Key (4)  // Planting DPS Mushroom
+  Wait (3800) 
+  }
+
+}
+
+Hotkey ( LShift F1 ) // Heal Mushroom only
+{
+   
+Package
+
+  {
+  Sendto ( DRIVER  DPS1 DPS2 DPS3 DPS4)
+
+  Key (K)  // Set ground target at 000
+  Wait (300)
+    Key (M)  // Planting Heal Mushroom
+  Wait (3800)
+  }
+
+}
+
+Hotkey ( LCtrl F1 ) // Mushroom, this key is for the Animist's to plant mushrooms
+{
+   
+Package
+
+  {
+  Sendto ( DPS3 DPS4)
+
+  Key (K)  // Set ground target at 000
+  Wait (300)
+  Key (4)  // Planting DPS Mushroom
+  Wait (3800)
+  Key (4)  // Planting DPS Mushroom
+  Wait (3800)
+  Key (M)  // Planting Heal Mushroom
+  Wait (3800)
+  Key (4)  // Planting DPS Mushroom
+  Wait (3800)
+  Key (4)  // Planting DPS Mushroom
+  Wait (3800) 
+  Key (4)  // Planting DPS Mushroom
+  Wait (3800)
+  Key (4)  // Planting DPS Mushroom
+  Wait (3800) 
+  Key (4)  // Planting DPS Mushroom
   Wait (3800) 
   }
 
@@ -85,8 +131,8 @@ Package
   Wait (300)
   Slash ( "/face" )
   Wait (300)
-  //Key (1) // Send pet
-  //Wait (300) 
+  Key (1) // Send pet
+  Wait (300) 
   Key (0) // Cast Debbuf Constitution
   Wait (300)
   Key (8) //Cast Wisp
@@ -109,8 +155,8 @@ Package
   Wait (300)
   Slash ( "/face" )
   Wait (300)
-  //Key (1) // Send pet
-  //Wait (300) 
+  Key (1) // Send pet
+  Wait (300) 
   Key (0) // Cast Debbuf Constitution
   Wait (300)
   Key (8) // Cast Wisp
@@ -121,6 +167,43 @@ Package
  Wait (2800)
  //Key (9) // Cast Drainlife
  //Wait (2800)
+  }
+
+}
+
+
+Hotkey (LShift F3) // Send the pet to pull and debuff stamina
+
+{
+ 
+Package
+
+  {
+  Sendto (DRIVER)
+  
+  Wait (300)
+  Slash ( "/face" )
+  Wait (300)
+  Key (1) // Send pet
+  Wait (300) 
+  Key (0) // Cast Debbuf Constitution
+  Wait (300)
+  }
+
+Package
+
+  {
+  
+  Sendto (DPS1 DPS2 DPS3 DPS4)
+  
+  Slash ( "/assist DRIVER" )
+  Wait (300)
+  Slash ( "/face" )
+  Wait (300)
+  Key (1) // Send pet
+  Wait (300) 
+  Key (0) // Cast Debbuf Constitution
+  Wait (300)
   }
 
 }
@@ -206,23 +289,23 @@ Package
   	Key ( U ) // DEX
   	Wait ( 3300 )
   	Key ( I ) // CON
-  	Wait ( 3300 )
-  Key ( O ) // AF
-  Wait ( 3300 )
+    Wait ( 3300 )
+   Key ( O ) // AF
+   Wait ( 3300 )
 	 Key ( P ) // AF BARD
-  	Wait ( 3300 )
-	Key ( J ) // CON STR Bard
-	Wait ( 3300 )
-  	Key ( 8 ) // Cast Mana Regen song
-  	Wait ( 3300 )
-  	//Key ( 9 ) // Cast heal Song
+   Wait ( 3300 )
+	 Key ( J ) // CON STR Bard
+	 Wait ( 3300 )
+  	//Key ( 8 ) // Cast Mana Regen song removed to be able to cast it when desired
+  	//Wait ( 3300 )
+  	//Key ( 9 ) // Cast heal Song removed to be able to cast it when desired
   	//Wait ( 2300 )
-  	//Key ( 7 ) // Cast End song
+  	//Key ( 7 ) // Cast End song removed to be able to cast it when desired
   	//Wait ( 3300 )
 	//Key ( 0 ) // Cast speed song removed to be able to cast it when desired
   	//Wait ( 3300 )
-  	//Key ( K ) // Cast Bard Resistance
-  	//Wait ( 4300 )
+  	Key ( K ) // Cast Bard Resistance
+  	Wait ( 4300 )
 
 // Buff DRIVER
 
@@ -313,6 +396,8 @@ Package
   Wait ( 300 )
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
+  Key ( O ) // CON/STR
+  Wait ( 3300 )
 
   // Buff HEALER1
         
@@ -320,6 +405,8 @@ Package
   Wait ( 300 )
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
+  //Key ( O ) // CON/STR
+  //Wait ( 3300 )
 
   // Buff BLOCKBOT
 
@@ -327,8 +414,8 @@ Package
   Wait ( 300 )
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
-  //Key ( O ) // CON/STR
-  //Wait ( 3300 )
+  Key ( O ) // CON/STR
+  Wait ( 3300 )
 
   // Buff DRIVER
 
@@ -349,8 +436,8 @@ Package
   Wait ( 3300 )
   Key ( I ) // INT
   Wait ( 3300 )
-  //Key ( O ) // CON/STR
-  //Wait ( 3300 )
+  Key ( O ) // CON/STR
+  Wait ( 3300 )
 
   // Buff DPS 2
 
@@ -359,6 +446,8 @@ Package
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
   Key ( I ) // INT
+  Wait ( 3300 )
+  Key ( O ) // CON/STR
   Wait ( 3300 )
 
   // Buff DPS 3
@@ -369,6 +458,8 @@ Package
   Wait ( 3300 )
   Key ( I ) // INT
   Wait ( 3300 )
+  Key ( O ) // CON/STR
+  Wait ( 3300 )
 
   // Buff DPS 4
 
@@ -377,6 +468,8 @@ Package
   Key ( U ) // DEX/QUI
   Wait ( 3300 )
   Key ( I ) // INT
+  Wait ( 3300 )
+  Key ( O ) // CON/STR
   Wait ( 3300 )
 
 	// Buff group with druid resitance
@@ -842,7 +935,7 @@ Hotkey (Oem4) // Cast the animist Tank PET
 Package
 {
   sendto (BLOCKBOT)
-  Key (E) //  Cast the warden Bubble
+  Key (0) //  Cast the warden Bubble
   Wait (300)
 }
 
@@ -851,6 +944,8 @@ Package
   {
   Sendto (DRIVER)
   
+  Key (K)  // Set ground target at 000
+  Wait (300)
   Wait(200)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
@@ -863,6 +958,8 @@ Package
  {
   Sendto (DPS1)
   
+  Key (K)  // Set ground target at 000
+  Wait (300)
   Wait(400)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
@@ -875,6 +972,8 @@ Package
    {
   Sendto (DPS2)
   
+  Key (K)  // Set ground target at 000
+  Wait (300)
   Wait(600)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
@@ -887,6 +986,8 @@ Package
    {
   Sendto (DPS3)
   
+  Key (K)  // Set ground target at 000
+  Wait (300)
   Wait(800)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
@@ -899,6 +1000,8 @@ Package
    {
   Sendto (DPS4)
   
+  Key (K)  // Set ground target at 000
+  Wait (300)
   Wait(1000)
   Key (P) // Cast the animist Tank PET
   Wait (5300)
@@ -925,7 +1028,7 @@ Package
   }
 }
 
-Hotkey ( Oem1 ) // Cast Bard Speed
+Hotkey ( RShift  Oem1 ) // Cast Bard Speed
 
 {
  
@@ -934,16 +1037,27 @@ Package
   {
   Sendto ( HEALER1 )
 
+  Key ( 0 ) // Cast speed song removed to be able to cast it when desired
+  Wait ( 3300 )
+  }
+}
+
+Hotkey ( Oem1 ) // Cast Endurance, Mana and Heal songs
+
+{
+ 
+Package
+   
+  {
+  Sendto ( HEALER1 )
+
+  Key ( 8 ) // Cast Mana Regen song
+  Wait ( 3300 )
   Key ( 9 ) // Cast heal Song
   Wait ( 2300 )
   Key ( 7 ) // Cast End song
   Wait ( 3300 )
-  Key ( 0 ) // Cast speed song removed to be able to cast it when desired
-  Wait ( 3300 )
-  Key ( K ) // Cast Bard Resistance
-  Wait ( 4300 )
   }
-
 }
 
 Hotkey (Oem3)
@@ -952,13 +1066,19 @@ Hotkey (Oem3)
    {
     Sendto ( DRIVER )
     
-  Slash ( "/invite DPS1" )
-	Slash ( "/invite DPS2" )
-	Slash ( "/invite DPS3" )
-	Slash ( "/invite DPS4" )
- 	Slash ( "/invite HEALER1" )
-	Slash ( "/invite HEALER2" )
-	Slash ( "/invite BLOCKBOT" )
+Slash ( "/invite DPS1" )
+wait (200)	
+Slash ( "/invite DPS2" )
+wait (200)
+Slash ( "/invite DPS3" )
+wait (200)
+Slash ( "/invite DPS4" )
+wait (200)
+Slash ( "/invite HEALER1" )
+wait (200)
+Slash ( "/invite HEALER2" )
+wait (200)
+Slash ( "/invite BLOCKBOT" )
    }
    
    package
@@ -970,4 +1090,54 @@ Hotkey (Oem3)
    }
 }
 
+Hotkey ( LShift Oem3)
+{
+   
+   package
+   {
+    Sendto ( DPS1 DPS2 DPS3 DPS4 HEALER1 HEALER2 BLOCKBOT )
+
+    Wait(1000)
+    ClickMouse (625 430) // Location of the Accept Invite button     
+   }
+}
+
+Hotkey ( V ) // Run MAcro
+{
+   
+Package
+
+  {
+  Sendto ( DRIVER  DPS1 DPS2 DPS3 DPS4 BLOCKBOT HEALER1 HEALER2 )
+
+  Key (V)  // All toons will run , you will need to bing V to RUN
+  Wait (300)
+  }
+
+}
+
+
+Hotkey (LCtrl Oem3)
+{
+   package
+   {
+    Sendto ( DRIVER )
+    
+Slash ( "/bg invite DPS1" )
+wait (200)	
+Slash ( "/bg invite DPS2" )
+wait (200)
+Slash ( "/bg invite DPS3" )
+wait (200)
+Slash ( "/bg invite DPS4" )
+wait (200)
+Slash ( "/bg invite HEALER1" )
+wait (200)
+Slash ( "/bg invite HEALER2" )
+wait (200)
+Slash ( "/bg invite BLOCKBOT" )
+   }
+   
+
+}
 //LShift F1-F4, RShift F9-12, /groundset 000, V is speed, /groundassist 
