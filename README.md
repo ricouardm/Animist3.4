@@ -40,8 +40,8 @@
 - Healer 2 (DROUD) will cast CON & FOR buff on all team members, As Bard have a self buff he will be excluded 
 - Bard to cast Resitance on himself (FIX)
 - BLOCKBOT bubble sequence remove  the Wait of 300 ms as not necessary (FIX)
-
-#### Oem1:
+00.12 Date 11.02.2019 11:07
+### Oem1:
 - Bard cast Endurance, Mana and Heal songs 
 
 #### RShift Oem1:
