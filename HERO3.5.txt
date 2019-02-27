@@ -1,6 +1,6 @@
 // Team Hero  3.5
 
-// Script Version :  00.01 Date 25.02.2019 20:52
+// Script Version :  00.02 Date 27.02.2019 12:46
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -8,17 +8,17 @@
 
 // Team Members
 
-// DRIVER: Bangangte --> Heroine --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
+// DRIVER: Bangangte --> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DRIVER
 // HEALER1: Belseri --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
 // HEALER2: Bitare --> Droud --> Nurture 42, Regen 33 --> Window name: HEALER2 
 // BLOCKBOT: Benue --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
-// DPS1: Bomwali --> Heroine --> 43 Verdant, 32 Creeping --> Window name: DPS1
-// DPS2: Bangantu --> Heroine --> 43 Verdant, 32 Creeping --> Window name: DPS2
-// DPS3: Bbangangte--> Heroine --> 43 Verdant, 32 Creeping --> Window name: DPS3
-// DPS4: Bekwil --> Heroine --> 43 Verdant, 32 Creeping --> Window name: DPS4
+// DPS1: Bomwali --> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DPS1
+// DPS2: Bangantu --> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DPS2
+// DPS3: Bbangangte--> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DPS3
+// DPS4: Bekwil --> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DPS4
 
 
-Hotkey ( F1 ) // Assist, FAce and stick send to all DPS 1-4 and to the DRIVER
+Hotkey ( F1 ) // Assist, Face and stick send to all DPS 1-4 and to the DRIVER
 {
    
 Package
@@ -36,7 +36,7 @@ Package
 
 }
 
-Hotkey ( LShift F1 ) // Assist, FAce and stick send to all DPS 1-4
+Hotkey ( LShift F1 ) // Assist, Face and stick send to all DPS 1-4
 {
    
 Package
@@ -54,7 +54,7 @@ Package
 
 }
 
-Hotkey ( LCtrl F1 ) // Mushroom, this key is for the Animist's to plant mushrooms
+Hotkey ( LCtrl F1 ) // Assist, Face and stick send to all DPS 3-4
 {
    
 Package
@@ -62,24 +62,12 @@ Package
   {
   Sendto ( DPS3 DPS4)
 
-  Key (K)  // Set ground target at 000
+  Slash ( "/assist DRIVER" )
   Wait (300)
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800)
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800)
-  Key (M)  // Planting Heal Mushroom
-  Wait (3800)
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800)
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800) 
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800)
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800) 
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800) 
+  Key (T) // STICK
+  Wait (300) 
+  Key (F) // FACE
+  Wait (300)
   }
 
 }
