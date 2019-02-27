@@ -1,6 +1,6 @@
-// Team Animist  3.4 Galladoria
+// Team Hero  3.5
 
-// Script Version :  00.12 Date 11.02.2019 11:07
+// Script Version :  00.01 Date 25.02.2019 20:52
 
 // IP ADD of DAOC SRV : 107.23.173.143
 
@@ -8,58 +8,48 @@
 
 // Team Members
 
-// DRIVER: Bafia --> Animist Verdant --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
-// HEALER1: Bamenyam --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
-// HEALER2: Bandjoum --> Druid --> Nurture 42, Regen 33 --> Window name: HEALER2 
-// BLOCKBOT: Bamun --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
-// DPS1: Bajwe --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS1
-// DPS2: Balbamu --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS2
-// DPS3: Balefali --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS3
-// DPS4: Bamendjing --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
+// DRIVER: Bangangte --> Heroine --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
+// HEALER1: Belseri --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
+// HEALER2: Bitare --> Droud --> Nurture 42, Regen 33 --> Window name: HEALER2 
+// BLOCKBOT: Benue --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
+// DPS1: Bomwali --> Heroine --> 43 Verdant, 32 Creeping --> Window name: DPS1
+// DPS2: Bangantu --> Heroine --> 43 Verdant, 32 Creeping --> Window name: DPS2
+// DPS3: Bbangangte--> Heroine --> 43 Verdant, 32 Creeping --> Window name: DPS3
+// DPS4: Bekwil --> Heroine --> 43 Verdant, 32 Creeping --> Window name: DPS4
 
 
-Hotkey ( F1 ) // Mushroom, this key is for the Animist's to plant mushrooms
+Hotkey ( F1 ) // Assist, FAce and stick send to all DPS 1-4 and to the DRIVER
 {
    
 Package
 
   {
-  Sendto ( DRIVER  DPS1 DPS2 DPS3 DPS4)
-
-  Key (K)  // Set ground target at 000
+  Sendto ( DRIVER DPS1 DPS2 DPS3 DPS4)
+    
+  Slash ( "/assist DRIVER" )
   Wait (300)
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800)
-  Key (4)  // Planting DPS Mushroom
-  Wait (3800)
-  Key (M)  // Planting Heal Mushroom
-  Wait (3800)
-  //Key (4)  // Planting DPS Mushroom
-  //Wait (3800)
-  //Key (4)  // Planting DPS Mushroom
-  //Wait (3800) 
-  //Key (4)  // Planting DPS Mushroom
-  //Wait (3800)
-  //Key (4)  // Planting DPS Mushroom
-  //Wait (3800) 
-  //Key (4)  // Planting DPS Mushroom
-  Wait (3800) 
+  Key (T) // STICK
+  Wait (300) 
+  Key (F) // FACE
+  Wait (300)
   }
 
 }
 
-Hotkey ( LShift F1 ) // Heal Mushroom only
+Hotkey ( LShift F1 ) // Assist, FAce and stick send to all DPS 1-4
 {
    
 Package
 
   {
-  Sendto ( DRIVER  DPS1 DPS2 DPS3 DPS4)
-
-  Key (K)  // Set ground target at 000
+  Sendto ( DPS1 DPS2 DPS3 DPS4)
+    
+  Slash ( "/assist DRIVER" )
   Wait (300)
-    Key (M)  // Planting Heal Mushroom
-  Wait (3800)
+  Key (T) // STICK
+  Wait (300) 
+  Key (F) // FACE
+  Wait (300)
   }
 
 }
@@ -94,7 +84,7 @@ Package
 
 }
 
-Hotkey ( F2 ) // AOE Spell, this key is for Animist'as to AOE and the Healer's to  Standard Group Heal
+Hotkey ( F2 ) // This will be the default Blade / Shiel Roatation
 {
    
 Package
@@ -102,7 +92,7 @@ Package
  {
   Sendto ( DRIVER DPS1 DPS2 DPS3 DPS4)
 
-  Key (2)  // Casting AOE spell
+  Key (1)  // Casting AOE spell
   Wait (3300)
   //Key (2)  // Casting AOE spell
   //Wait (3300)

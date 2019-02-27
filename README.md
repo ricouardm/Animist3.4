@@ -1,21 +1,21 @@
-# Animist3.4
+# Hero 3.5
 
-#Description : Mojoware, Daoc Animist Macro Team ( 5 Animist's, 1 Warden, 1 Bard, 1 Druid)- Galladoria
+#Description : Mojoware, Daoc Hero Macro Team ( 5 Hero's , 1 Warden, 1 Bard, 1 Druid)
 
 #Team Composition:
 
-- DRIVER: Bafia --> Animist Verdant --> 43 Verdant, 32 Creeping  --> Window name: DRIVER
-- HEALER1: Bamenyam --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
-- HEALER2: Bandjoum --> Druid --> Nurture 42, Regen 33 --> Window name: HEALER2 
-- BLOCKBOT: Bamun --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
-- DPS1: Bajwe --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS1
-- DPS2: Balbamu --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS2
-- DPS3: Balefali --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS3
-- DPS4: Bamendjing --> Animist Verdant --> 43 Verdant, 32 Creeping --> Window name: DPS4
+- DRIVER: Bangangte --> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DRIVER
+- HEALER1: Belseri --> Bard --> Nuture 50, Regrowth 43 --> Window name:  HEALER1
+- HEALER2: Bitare --> Droud --> Nurture 42, Regen 33 --> Window name: HEALER2 
+- BLOCKBOT: Benue --> Warden --> Shield 42, Regrowth 33, Nurture 49 --> Window name: BLOCKBOT
+- DPS1: Bomwali --> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DPS1
+- DPS2: Bangantu --> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DPS2
+- DPS3: Bbangangte--> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DPS3
+- DPS4: Bekwil --> Heroine --> 50 Large Weapon, 42 Shield, 34 Blades & 20 Parry --> Window name: DPS4
 
-## ==REV: 00.12 Date 11.02.2019 11:07==
+## ==REV: 00.01 Date 25.02.2019 20:52:07== ** TEAM and FILE  Creation **
 
-### File name: ANIMIST 3.4.txt
+### File name: HERO3.5.txt
 
 ####Team Composition:
 - Fixed some typo's regarding Druid description (aka HEALER2)
